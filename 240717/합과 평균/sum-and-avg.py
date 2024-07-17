@@ -1,2 +1,3 @@
 arr = input().split()
-print(sum(arr), f"{sum(arr)/len(arr):.1f}")
+a,b = int(arr[0]), int(arr[1])
+print(a+b, f"{(a+b)/2:.1f}")
