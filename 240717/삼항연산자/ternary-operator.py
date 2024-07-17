@@ -1,2 +1,3 @@
 score = int(input())
-print("pass") if (score=100) else print("failure")
+grade = "pass" if (score=100) else "failure"
+print(grade)
