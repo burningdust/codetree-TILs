@@ -15,4 +15,4 @@ else :
     if a>b :
         print(a)
     else :
-        print(c)
+        print(b)
