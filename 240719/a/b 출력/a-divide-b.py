@@ -6,5 +6,5 @@ print(int(rate), end=".")
 
 for _ in range(20):
     rate -= int(rate)
-    rate*=10
+    rate *= 10
     print(int(rate), end="")
