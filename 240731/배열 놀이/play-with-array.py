@@ -17,3 +17,4 @@ for _ in range(q):
     else:
         for i in range(Q[1]-1, Q[2]):
             print(arr[i], end=" ")
+        print()
