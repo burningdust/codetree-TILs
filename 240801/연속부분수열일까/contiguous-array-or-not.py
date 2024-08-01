@@ -5,11 +5,15 @@ B = input().split()
 satisfied = False
 
 for i in range(n1-n2+1):
-    A_sub = []
-    for j in range(n2):
-        A_sub.append(A[i+j])
-    if A_sub == B:
-        satisfied = True
+    satisfied = False
+    if A[i] == B[0]:
+        for j in range(n2):
+            if A[i+j] == B[j]:
+                satisfied = True
+            else:
+                satisfied = False
+                break
+    if satisfied:
         break
 
-print("Yes") if satisfied else print("No")
+print ("Yes") if satisfied else print("No")
