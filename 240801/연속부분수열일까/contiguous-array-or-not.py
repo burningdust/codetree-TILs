@@ -3,7 +3,7 @@ n1,n2 = int(arr[0]), int(arr[1])
 A = input().split()
 B = input().split()
 
-for i in range(n1-n2):
+for i in range(n1-n2+1):
     satisfied = False
     if A[i] == B[0]:     
         for j in range(n2):
