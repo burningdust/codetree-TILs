@@ -11,7 +11,11 @@ for i in range(1, len(A)):
         cnt = 1
 
 arr.append(cnt)
-        
-print(len(arr))
+
+sum_val = 0
+for elem in arr:
+    sum_val += len(str(elem))
+print(sum_val)
+
 for elem in arr:
     print(elem, end="")
