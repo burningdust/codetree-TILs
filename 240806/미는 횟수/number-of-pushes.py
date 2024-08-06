@@ -9,6 +9,7 @@ while A!=B:
     if cnt>len(A):
         print(-1)
         satisfied = False
+        break
 
 if satisfied:
     print(cnt)
