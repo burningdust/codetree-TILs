@@ -4,7 +4,7 @@ cnt = 0
 satisfied = True
 
 while A!=B:
-    A = A[1:] + A[0]
+    A = A[-1] + A[:-1]
     cnt += 1
     if cnt>=len(A):
         print(-1)
