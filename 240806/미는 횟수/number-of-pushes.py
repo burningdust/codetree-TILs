@@ -1,11 +1,14 @@
 A = input()
 B = input()
 cnt = 0
+satisfied = True
 
-for _ in range(len(A)):
+while A!=B:
     A = A[1:] + A[0]
     cnt += 1
-    if A==B:
-        break
+    if cnt>len(A):
+        print(-1)
+        satisfied = False
 
-print(cnt)
+if satisfied:
+    print(cnt)
