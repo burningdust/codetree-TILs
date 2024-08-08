@@ -10,4 +10,4 @@ n = int(input())
 if magic_num(n):
     print("Yes")
 else:
-    print()
+    print("No")
