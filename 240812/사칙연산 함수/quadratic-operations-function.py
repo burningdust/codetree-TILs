@@ -25,4 +25,7 @@ elif o=='/':
 else:
     result = False
 
-print(a,o,c,'=',result)
+if result:
+    print(a,o,c,'=',result)
+else:
+    print(result)
