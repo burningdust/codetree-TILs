@@ -1,17 +1,12 @@
-num = 0
+n = int(input())
 
-def divide(n):
-    global num
-
+def get_num(n):
     if n == 1:
-        return num
-
-    num += 1
+        return 0
+    
     if n%2 == 0:
-        return divide(n//2)
+        return get_num(n//2) + 1
     else:
-        return divide(n//3)
+        return get_num(n//3) + 1
 
-
-N = int(input())
-print(divide(N))
+print(get_num(n))
